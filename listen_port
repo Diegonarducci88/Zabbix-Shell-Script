@@ -2,4 +2,5 @@
 # Created by Diego Arioza
 # Contact: diego.ariozza@gmail.com
 
-/bin/nmap -sS -P0 "$1" -p "$2" --host-timeout 3 2> /dev/null | /bin/grep open -c
+/bin/sudo /bin/nmap -sS -P0 "$1" -p "$2" --host-timeout 3 2> /dev/null | /bin/grep open -c
+
